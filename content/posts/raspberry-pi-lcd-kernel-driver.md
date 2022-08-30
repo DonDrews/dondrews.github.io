@@ -1,0 +1,9 @@
+---
+title: "Raspberry Pi LCD Kernel Driver"
+cover: "img/lcd-driver.jpg"
+date: 2020-11-14
+---
+
+Just to preface, this was done as an educational exercise. There are great existing user space libraries for interfacing with the well-loved st7036 chipset. However, I thought it would be an interesting challenge to write a kernel module for raspberry pi that implemented a character device driver at the register level. Previously, I wrote a driver for this display for stm32, so my goal was to focus on the kernel aspects rather than the interface, which I copied with few changes.
+
+This project, like many others, involved more reading than coding or building. Thankfully, there was great information to be found online, in places such as the [Linux Device Drivers book](https://lwn.net/Kernel/LDD3/) and the [Broadcom peripherals datasheet](https://www.raspberrypi.org/app/uploads/2012/02/BCM2835-ARM-Peripherals.pdf). There were a few topics that were not well documented, such as the creation of /dev entries and which of the several delay functions to use for a given scenario, but after some searching I found answers to these as well. As for the driver itself, it has a fairly standard topology. On module initialization, a virtual memory page for the GPIO registers is mapped, and startup commands are sent to the screen. Since Raspbian supports it, udev is utilized to create the /dev entry for the character device. Reads simply return a static message, and writes are sent over the bus to the screen one nibble at a time. While the operations in this driver are basic, I think it was a good starting place for kernel-side development. I hope to work on a network or block device driver, and utilize more advanced features in the future. The code for this driver is [here](https://github.com/DonDrews/linux_driver_tests). Included in the repository is a small script to write to the screen from stdin.
