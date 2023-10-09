@@ -4,7 +4,6 @@ cover: "img/controller.jpg"
 date: 2020-12-07
 ---
 
-# Overview
 This project originally started nearly six years ago, when my friend and I patched together a prototype in my garage over the course of a week. It was constructed out of breadboard pushbuttons, birch plywood, an Arduino, and lots of glue. There were many issues with that version, including a patchwork driver, analog/digital interference, and unworkable wire management.
 
 In 2020 we decided to revive the project, with the goal of fixing all the aforementioned issues, as well as providing a clean and ergonomic exterior. The goal was to have a generalized controller/gamepad for use with computer games. This time, we were able to succeed in that pursuit. Below I will elaborate on our design process.
