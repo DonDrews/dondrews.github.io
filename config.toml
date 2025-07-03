@@ -12,7 +12,7 @@ pagination.pagerSize = 5
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -82,10 +82,14 @@ pagination.pagerSize = 5
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
         identifier = "recipes"
         name = "Recipes"
         url = "/recipes"
+      [[languages.en.menu.main]]
+        identifier = "info"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog - Tech"
+        url = "/posts"

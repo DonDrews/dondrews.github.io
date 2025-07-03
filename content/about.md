@@ -3,7 +3,9 @@ title: "About"
 cover: "img/breadboard.jpg"
 date: 2020-06-27
 ---
-Welcome! I am Donovan Drews, and this is my technical blog of various projects I dabble with on my spare time. Currently I work as an FPGA engineer, and previously I studied mathematics at UC San Diego. The topics contained here range from embedded systems to audio electronics to software and visualizations. If you have any questions you can reach me at donovancarldrews@gmail.com.
+Welcome! I am Donovan Drews, and this is my website covering various projects I dabble with on my spare time. Currently I am taking a career break to work as a vegetable farmer. Professionally, my focus is FPGAs, embedded systems, and software defined radio. Before all this, I was studying mathematics at UC San Diego.
+
+The topics contained here can be fairly varied, but generally center around embedded systems. If you have any questions you can reach me at donovancarldrews@gmail.com.
 
 [GitHub](https://github.com/DonDrews)
 
