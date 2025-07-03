@@ -1,6 +1,6 @@
 ---
 title: "Recipes"
-date: 2025-07-2
+date: 2025-07-02
 ---
 
 # Summer Veggie Pasta
